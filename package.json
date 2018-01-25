@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "open:dev": "opener http://localhost:9090",
-    "watch-css": "node-sass -w --output-style compressed --source-map true --include-path scss scss/main.scss dist/css/main.css"
+    "open": "live-server",
+    "watch-css": "node-sass -w --output-style compressed --source-map true --include-path scss scss/main.scss dist/css/main.css",
+    "watch-live": "concurrently --kill-others \"npm run watch-css\" \"npm run open\""
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "compass": "^0.1.1",
+    "concurrently": "^3.5.1",
     "node-sass": "^4.7.2",
     "skeleton-sass-official": "^3.1.5"
   },
