@@ -1,6 +1,7 @@
 $main-color: rgb(200, 100, 80);
+$main-font: 'arial';
 
 body {
   background-color: $main-color;
-  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-}
+  font-family: $main-font, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+} 
