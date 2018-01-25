@@ -1,7 +1,2 @@
-$main-color: rgb(200, 100, 80);
-$main-font: 'arial';
+@import "skeleton.scss"; 
 
-body {
-  background-color: $main-color;
-  font-family: $main-font, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-} 

@@ -15,10 +15,13 @@
   "author": "Laura Rodgers",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "compass": "^0.1.1",
+    "node-sass": "^4.7.2",
+    "skeleton-sass-official": "^3.1.5"
   },
   "bugs": {
     "url": "https://github.com/PatrickPahlke/hotel-website/issues"
   },
-  "homepage": "https://github.com/PatrickPahlke/hotel-website#readme"
+  "homepage": "https://github.com/PatrickPahlke/hotel-website#readme",
+  "dependencies": {}
 }
