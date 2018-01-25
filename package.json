@@ -6,12 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "open:dev": "opener http://localhost:9090",
-    "build-css": "node-sass --include-path scss scss/main.scss   dist/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "build-js": "uglifyjs js/*.js -c -m reserved=['$','require','exports'] --source-map --output dist/js/main.js",
-    "watch-js": "watchify js/*.js -o dist/js/main.js -dv",
-    "build": "npm run build-css && npm run build-js",
-    "watch": "npm run watch-css & npm run watch-js"
+    "build-css": "node-sass -w --output-style compressed --include-path scss scss/main.scss dist/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
