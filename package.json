@@ -1,0 +1,32 @@
+{
+  "name": "hotel-website",
+  "version": "1.0.0",
+  "description": "A hotel website project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open:dev": "opener http://localhost:9090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickPahlke/hotel-website.git"
+  },
+  "author": "Laura Rodgers",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "http-server": "^0.7.3",
+    "jshint": "^2.5.10",
+    "live-reload": "^0.2.0",
+    "minifyify": "^6.0.0",
+    "nodemon": "^1.2.1",
+    "opener": "^1.4.0",
+    "parallelshell": "^1.0.0",
+    "rimraf": "^2.2.8",
+    "node-sass ": "^4.7.2"
+  },
+  "bugs": {
+    "url": "https://github.com/PatrickPahlke/hotel-website/issues"
+  },
+  "homepage": "https://github.com/PatrickPahlke/hotel-website#readme"
+}
