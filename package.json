@@ -4,7 +4,6 @@
   "description": "A hotel website project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "open": "live-server",
     "watch-css": "node-sass -w --output-style compressed --source-map true --include-path scss scss/main.scss dist/css/main.css",
     "watch-live": "concurrently --kill-others \"npm run watch-css\" \"npm run open\""
@@ -25,5 +24,7 @@
     "url": "https://github.com/PatrickPahlke/hotel-website/issues"
   },
   "homepage": "https://github.com/PatrickPahlke/hotel-website#readme",
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
