@@ -7,42 +7,151 @@
   <title>Hotel Zeller</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="dist/css/main.css" />
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="dist/js/main.js"></script>
+  <script>
+    $(function () {
+      //alert($("#page-headline").text())
+    })
+  </script>
 </head>
+
 <body>
+
   <div class="container">
-    <div class="row">
-      <h1>Hotel Zeller</h1>
-    </div>
+    <header id="page-header">
+      <div class="row">
+        <div class="three columns">
+          Zeller – Hotel + Restaurant
+          <br> Aschaffenburger Straße 2
+          <br> D-63796 Kahl
+          <i class="fa fa-map" aria-hidden="true"></i>
+        </div>
+        <div class="six columns">
+          <h1 id="page-headline">
+            <img src="dist/img/logo.svg" height="85">
+          </h1>
+        </div>
+        <div class="three columns">
+          <button class="button u-full-width">Login</button>
+        </div>
+        <div class="three columns">
+          <button class="button u-full-width">Sprache</button>
+        </div>
+      </div>
+      <nav class="row navigation">
+        <ul>
+          <li>
+            <a href="#">Start</a>
+          </li>
+          <li>
+            <a href="#">Zimmer</a>
+          </li>
+          <li>
+            <a href="#">Tagungen</a>
+          </li>
+          <li>
+            <a href="#">Wellness</a>
+          </li>
+          <li>
+            <a href="#">Restaurant</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="row">
+
+      <div class="eight columns">
+        <div class="img-box">
+          <img class="u-full-width" src="dist/img/0001.jpg" alt="Willkommen">
+        </div>
+        <div class="dark-box">
+          <h2>Willkommen</h2>
+        </div>
+
+      </div>
       <div class="four columns">
-        <form>
-          <label for="name">Name:</label>
-          <input class="u-full-width" type="text" placeholder="Max Mustermann">
-          <label for="mail">Mail:</label>
-          <input class="u-full-width" type="email" placeholder="max@mustermann.de">
-          <label for="alter">Alter:</label>
-          <input class="u-full-width" type="number" min="16" max="99" placeholder="24"><br>
-          <input class="button-primary"  type="submit" value="Einchecken">
+        <form id="booking" method="post">
+          <h1>Buchung</h1>
+          <span class="calendar">
+            <label for="anreise">
+              Anreise
+            </label>
+            <input type="date">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </span>
+          <span class="calendar">
+            <label for="abreise">
+              Abreise
+            </label>
+            <input type="date">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </span>
+          <label for="anzahl_zimmer">Anzahl der Zimmer:</label>
+          <input class="u-full-width" type="number" min="1" max="85" placeholder="1-85">
+          <label for="anzahl_personen">Anzahl der Reiseteilnehmer:</label>
+          <input class="u-full-width" type="number" min="1" max="120" placeholder="1-120">
+          <input class="button-primary" type="submit" value="Verfügbarkeit prüfen">
         </form>
       </div>
-      <div class="eight columns">
-        <h2>Willkommen</h2>
-        <p>Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer
-          durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.
-          Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. "Fix,
-          Schwyz!" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben
-          von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva
-          und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen
-          Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim.
-          Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. "Fix, Schwyz!" quäkt Jürgen blöd vom Paß. Victor
-          jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg.
-          Heizölrückstoßabdämpfung.Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett
-          verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich.</p>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <div class="img-box">
+          <img class="u-full-width" src="dist/img/0004.jpg" alt="Zimmer">
+          <button>Zimmer</button>
+        </div>
+      </div>
+      <div class="four columns">
+        <div class="img-box">
+          <img class="u-full-width" src="dist/img/0003.jpg" alt="Tagungen">
+          <button>Tagungen</button>
+        </div>
+      </div>
+      <div class="four columns">
+        <div class="img-box">
+          <img class="u-full-width" src="dist/img/0002.jpg" alt="Wellness">
+          <button>Wellness</button>
+        </div>
       </div>
     </div>
-
+    <div class="row">
+      <div class="eight columns">
+          <br><br><h5>Wir freuen uns, Sie in unserem Haus begrüßen zu dürfen.</h5>
+      </div>
+      <div class="four columns">
+          <div id="TA_restaurantWidgetGreen880" class="TA_restaurantWidgetGreen tripadvisor">
+              <ul id="cqO7xQA3I" class="TA_links TujqxBt">
+              <li id="3THnco7fY40" class="CSzHNuhjtTS">
+              <a target="_blank" href="https://www.tripadvisor.de/"><img src="https://www.tripadvisor.de/img/cdsi/partner/tripadvisor_logo_117x18-24177-2.png" alt="TripAdvisor"/></a>
+              </li>
+              </ul>
+              </div>
+              <script src="https://www.jscache.com/wejs?wtype=restaurantWidgetGreen&amp;uniq=880&amp;locationId=1939080&amp;icon=knifeAndFork&amp;lang=de&amp;display_version=2"></script>
+        <script>
+          $("tripadvisor").removeAttr("style");
+        </script>
+      </div>
+    </div>
+    <footer class="row">
+        <nav class="row navigation">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Karriere</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Presse</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-info" aria-hidden="true"></i> Impressum</a>
+              </li>
+            </ul>
+          </nav>
+    </footer>
   </div>
 </body>
 

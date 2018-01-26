@@ -1,1 +1,126 @@
-@import "skeleton.scss"; 
+@import "skeleton.scss";
+@import "navigation.scss";
+body {
+    background-color: white;
+    color: $gray-dark;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    margin-top: 1em;
+}
+
+#page-headline {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(200, 200, 200, .75);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $rose-mid;
+    text-shadow: 0 0 1px rgba(209, 209, 209, 0.75);
+    font-family: 'Fondamento', serif;
+    font-weight: normal;
+}
+
+.img-box {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .75);
+    padding: 0;
+    position: relative;
+    img {
+        display: block;
+        margin: 0;
+    }
+    button {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translateX(-50%);
+      background-color: rgba($rose-mid, .65);
+    }
+}
+
+#booking {
+    color: $green-original;
+    background-color: white;
+    border: 1px solid $gray-dark;
+    padding: 1em;
+    h1 {
+        font-family: 'PT Sans', sans-serif;
+        color: white; //$green-original;
+        letter-spacing: .1em;
+        text-shadow: none;
+        background-color: $green-original;
+        font-size: 1.6em;
+        padding: .6em 0;
+        font-weight: normal;
+        text-align: center;
+        border: 2px solid $gray-dark;
+    }
+}
+
+.dark-box {
+    margin: 1.5em 0;
+    padding: 1.5em;
+    background-color: $gray-light;
+    border: 1px solid $gray-mid;
+    h2 {
+        text-align: center;
+        margin: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.calendar {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5em;
+    label {
+        display: inline-block;
+        border-top: 1px solid $gray-mid;
+        border-left: 1px solid $gray-mid;
+        border-bottom: 1px solid $gray-mid;
+        border-top-left-radius: .5em;
+        border-bottom-left-radius: .5em;
+        box-sizing: border-box;
+        height: 2.5em;
+        margin: 0;
+        padding: 0.35em 1em;
+        background-color: $green-light;
+        color: white;
+    }
+    input[type="date"] {
+        margin: 0;
+        height: 2.5em;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+    i {
+        height: 2.5em;
+        padding: .4em .4em;
+        border-top: 1px solid $gray-mid;
+        border-right: 1px solid $gray-mid;
+        border-bottom: 1px solid $gray-mid;
+        border-top-right-radius: .5em;
+        border-bottom-right-radius: .5em;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0.35em 1em;
+        line-height: 1.65em;
+    }
+}
+
+.tripadvisor * {
+  background: none !important;
+  color: white !important;
+  width: 100% !important;
+}

@@ -1,0 +1,25 @@
+.navigation {
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      flex: 1;
+      a {
+        text-align: center;
+        color: $white-light;
+        border: 1px solid $gray-mid;
+        display: block;
+        padding: 1em;
+        &:link, &:visited {
+          text-decoration: none;
+          background: $green-original;
+        }
+        &:hover, &:focus {
+          color: $white-mid;
+          background: $green-mid;
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "open": "live-server",
-    "watch-css": "node-sass -w --output-style compressed --source-map true --include-path scss scss/main.scss dist/css/main.css",
+    "watch-css": "node-sass -w --include-path scss scss/main.scss dist/css/main.css",
+    "watch-css-min": "node-sass -w --output-style compressed --source-map true --include-path scss scss/main.scss dist/css/main.css",
     "watch-live": "concurrently --kill-others \"npm run watch-css\" \"npm run open\""
   },
   "repository": {

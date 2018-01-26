@@ -1,3 +1,5 @@
+@import "../fontawesome/scss/font-awesome.scss";
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|PT+Sans|Fondamento|Rosarivo');
 @import "../node_modules/normalize-scss/sass/normalize/import-now"; // import normalize-scss
 @import "../node_modules/skeleton-sass-official/skeleton/core/config"; // Skeleton Sass core loader
 
@@ -9,5 +11,3 @@
 @import "../node_modules/skeleton-sass-official/skeleton/themes/fresh/grid"; // theme grid styles
 
 @import "skeleton/loader";
-
-@import "../fontawesome/scss/font-awesome.scss";

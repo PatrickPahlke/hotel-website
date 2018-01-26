@@ -1,0 +1,71 @@
+// Colors
+$green-light: #527a67;
+$green-mid: #274e3d;
+$green-dark: #002517;
+$green-original: #132519;
+
+$rose-light: #efbfbf;
+$rose-mid: #bc8f8f;
+$rose-dark: #8b6162;
+
+$gray-light: #CCC;
+$gray-mid: darken($gray-light, 20%);
+$gray-dark: darken($gray-mid, 20%);
+
+$white-light: #FFF;
+$white-mid: darken($white-light, 10%);
+$white-dark: darken($white-mid, 10%);
+
+// Global background
+$background-color: $gray-light;
+$font-color: $white-mid;
+
+// Default overrides for new theme
+$is-fluid: true; // Change to true to enable the fluid grid
+$use-global-border-box: false; // Change to true the enable global border-box
+
+$link-color: $rose-mid; // default link color
+$link-hover: $rose-light; // default link color on :hover
+$link-decoration: underline; // default link decoration
+
+$base-width: if($is-fluid, 100%, ($base-col-width + $base-gutter-width) * $base-col-count);
+
+$font-size: 15px;  // default font size. Change here will adjust sizes across the board.
+$font-weight: 400; // sets the font weight
+$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; // default fonts
+$font-color: #222;  // default font color
+
+$heading-family: $font-family; // default heading (h1-h6) font
+$heading-color: $font-color; // default heading (h1-h6) color
+$heading-weight: 300; // sets the weight of the heading text
+
+$form-font: $font-family; // default form font
+
+// Button Settings
+$button-color: white;
+$button-weight: 300;
+$button-font-uppercase: false;
+$button-border-color: $green-dark;
+$button-background-color: $rose-mid;
+$button-height: 38px;
+$button-letter-spacing: 0.1rem;
+$button-border-radius: 2px;
+$button-font-size: relative(11px);
+
+$button-hover-color: black;
+$button-hover-border-color: $gray-dark;
+$button-hover-background-color: $rose-light;
+
+$button-primary-color: white;
+$button-primary-border-color: $button-primary-color;
+$button-primary-background-color: $green-mid;
+
+$button-primary-hover-color: $rose-dark;
+$button-primary-hover-background-color: $green-mid;
+$button-primary-hover-border-color: $button-primary-hover-background-color;
+
+// GRID CHANGES
+$grid-max-width: 960px;
+$base-col-count: 12;
+$base-col-width: 60px;
+$use-new-grid: true;
